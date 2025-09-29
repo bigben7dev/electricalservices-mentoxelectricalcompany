@@ -1,0 +1,323 @@
+<!DOCTYPE HTML>
+<html lang="eng-US">
+	<head>
+		<title>Mentoxelectrical</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--CSS written directly inside the HTML-->
+		<style>
+			.hero{
+				position: relative;
+				width: 100%;
+				height: 100vh; /* full screen height */
+				overflow: hidden;
+			}
+			.hero-image{
+				width:100%;
+				height:100%;
+				object-fit: cover;
+				display: block;
+			}
+			.overlay{
+				position:absolute;
+				top:0;
+				left:0;
+				width:100%;
+				height:100%;
+				background:rgba(0,0,0,0.2); /* dark transparent overlay */
+				color:#fff;
+				display:flex;
+				flex-direction:column;
+				justify-content:center;
+				align-items:center;
+				text-align:center;
+				padding:20px;
+			}
+			.overlay h1{
+				font-size:4rem; /* Large text */
+				font-weight: 900; /* Super bold */
+				text-transform:uppercase;
+				color:rgba(107, 136, 2, 0.4);
+				text-shadow:2px 2px 4px rgba(1, 32, 12, 0.877);
+				text-align:center;
+				margin-bottom:15px;
+			}
+			#OURSERVICES img{
+				width:270px;
+				height:auto;
+				border-radius:12px;
+				box-shadow:0 4px 6px rgba(0,0,0,0.1);
+				display:block;
+				margin:auto;
+			}
+			#nav ul{
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: center;
+			}
+			#nav li{
+				 margin: 5px;
+			}
+			        /* Tablets */
+			@media (max-width: 1024px) {
+				.overlay h1{
+					font-size: 3rem;
+				}
+				.overlay p{
+					font-size: 1.1rem;
+					max-width: 90%;
+				}
+			}
+                    /* Mobile */
+            @media (max-width: 768px){
+				.overlay h1{
+					font-size: 2.2rem
+				}
+				.overlay p{
+					font-size: 1rem;
+					padding: 0 10px;
+				}
+             /* Navigation buttons wrap */
+			     #nav ul{
+					display: flex;
+					flex-wrap: wrap;
+					justify-content: center;
+					padding: 0;
+					margin: 10px 0;
+				 }
+				 #nav li{
+					 margin: 5px;
+				 }
+				  /* Services grid adapts */
+				  .features{
+					display: grid;
+					grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+					gap: 20px;
+				  }
+			}
+			/* Small Phones */
+			@media (max-width: 480px) {
+				.overlay h1 {
+					font-size: 1.6rem;
+				}
+				.overlay p{
+					font-size: 0.9rem;
+				}
+				.features {
+					grid-template-columns: 1fr; /* stack features vertically */
+				}
+				#OURSERVICES img{
+					max-width: 220px;
+				}
+				#nav a.button{
+					font-size: 0.8rem;
+					padding: 6px 10px;
+				}
+			}
+
+		</style>
+	
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">  
+
+				<!-- Header -->
+					<header class="hero">
+						<!--Background image-->
+						<img src="images/solarment.jpg" alt="Mentox Electrical  Ltd" class="hero-image">
+						<!--Overlay Content-->
+						<div class="overlay">
+						<!--Logo-->
+						<img src="images/mentoxx.jpg" alt="Mentox Logo">
+						<h1><strong>MENTOX ELECTRICAL COMPANY LTD</strong></h1>
+						<p><em>Powering up the Homes and Businesses with Reliable Electrical Solutions & Clean Solar Energy</em></p>
+						</div>
+						<!-- Nav -->
+					<nav id="nav">
+						<ul>
+							<li><a href="#HOME" class="button primary">HOME</a></li>
+							<li><a href="#OURSERVICES" class="button primary">OUR SERVICES</a></li>
+							<li><a href="#ABOUTUS" class="button primary">ABOUT US</a></li>
+							<li><a href="#CONTACTUS" class="button primary">CONTACT US</a></li>
+						</ul>
+					</nav>
+					</header>
+
+				
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Home -->
+							<section id="HOME" class="main">
+								<div class="spotlight">
+									<div class="content">
+										<header class="major">
+											<h2>Welcome to Mentox Energy</h2>
+										</header>
+										<p>We bring reliable electrical engineering expertise and sustainable solar energy systems to homes and businesses.</br>
+											Mentox Energy delivers professional electrical engineering and turnkey solar installation for homes and businesses.</br>
+											We design systems that reduce energy:</p>
+                                            <ul>
+                                                <li>Energy Cost</li>
+                                                <li>Increase Reliability</li>
+												<li>support a cleaner future</li>
+                                            </ul>
+										<p>Backed by Certified workmanship and Local support.</p>
+										<ul class="features">
+											<li><strong>Free site assessment</strong>- we evaluate your location and power needs.</li>
+											<li><strong>Custom system design</strong>- solutions tailored to your budget and goals.</li>
+											<li><strong>Certified installation & warranty</strong>- safe, code-compliant work with aftercare</li>
+										</ul>
+										<a href="https://wa.me/message/SBJAIE5TBPIOG1" class="button primary">Request a Free Quote</a>
+									</div>
+								</div>
+							</section>
+
+						<!-- Our Sevices Section -->
+							<section id="OURSERVICES" class="main special">
+								<header class="major">
+									<h2>OUR SERVICES</h2>
+								</header>
+								<ul class="features">
+									<li>
+										<img src="images/electricalinst.jpg" alt="Mentox Electrical Installation">ELECTRICAL INSTALLATION</img>
+										<h3><strong>Electrical Installation</strong></h3>
+										<p> professional wiring, circuit design,and maintenance for residential,commercial, and industrial clients.</p>
+									</li>
+									<li>
+										<img src="images/solarinst2.jpg" alt="Mentox Solar Installation">SOLAR INSTALLATION</img>
+										<h3><strong>Solar Panel Installation</strong></h3>
+										<p>Reliable and affordable solar solutions to help you cut electricity costs and enjoy renewable energy independence.</p>
+									</li>
+									<li>
+										<img src="images/mentbattery.jpg" alt="Mentox Inverter Installation">INVERTER INSTALLATION</img>
+										<h3><strong>Backup Power System</strong></h3>
+										<p>Inverter, battery, and generator setup to keep your home or business running without interruptions.</p>
+									</li>
+									<li>
+										<img src="images/mentfencing.jpg" alt="Mentox Fencing Installation">ELECTRICAL FENCING</img>
+										<h3><strong>Electric Fence</strong></h3>
+										<p>Our Electric fencing services provide secure solutions for properties. we design, install, and maintain various types of electric fencing system:</br>
+											permanent Electric Fencing, Temporary Electric fencing, Solar-powered electric fencing</p>
+									</li>
+									<li>
+										<img src="images/mentcctv.jpg" alt="Mentox CCTV Installation">CCTV INSTALLATION</img>
+										<h3><strong>CCTV Surveillance System</strong></h3>
+										<p>Our CCTV Surveillance systems provide advanced security solutions for properties. We design, install and maintain various types of CCTV systems</br>
+										   IP camera system, Analog Camera system, Wireless Camera system, PTZ(Pan-Tilt-Zoom) camera system</p>
+									</li>
+									<li>
+										<img src="images/mentlighting.jpg" alt="Mentox lighting Installation">LIGHT INSTALLATION</img>
+										<h3><strong>Light Installation</strong></h3>
+										<p>Our Light installation services provide bright and efficient solutions. we design, install, and maintain.</br>
+										    Outdoor lighting(floodlights, securitylights), Indoor lighting(recessedblights, Ceiling lights), LED lighting solutions, Landscape lighting.</p>
+									</li>
+								</ul>
+								<footer class="major">
+									<ul class="actions special">
+									
+									</ul>
+								</footer>
+							</section>
+
+						<!--About Us Section -->
+							<section id="ABOUTUS" class="main special">
+							  <div>
+								<header class="major">
+									<h2>ABOUT US</h2>
+									<p>At <strong>Mentox Energy Solution</strong>, we believe electricity should be safe, reliable,and sustainable<br />
+									   As certified electrical engineers and solar panel specialists, we provide innovative power solutions that save costs and reduce your carbon footprint. </p>
+									<p>Wether you need a simple wiring project, a complete electrical installation, or a solar-powered energy system, we bring expertise, precision, and commitment to every project.</p>
+								</header>
+								<ul class="statistics">
+									<li class="style1">
+										<span class="fas fa-video"></span>
+										<strong>CCTV</strong> surveillance installation
+									</li>
+									<li class="style2">
+										<span class="fas fa-solar-panel"></span>
+										<strong>SOLAR SYSTEM</strong> installation
+									</li>
+									<li class="style3">
+										<span class="fas fa-battery-full"></span>
+										<strong>BACKUP POWER SYSTEM</strong> battery installation
+									</li>
+									<li class="style4">
+										<span class="fas fa-shield-alt"></span>
+										<strong>ELECTRIC FENCING</strong> installation
+									</li>
+									<li class="style5">
+										<span class="fas fa-lightbulb"></span>
+										<strong>ELECTRICAL</strong> installation
+									</li>
+								</ul>
+								<p class="content">  At Mentox Electrical Company, we are dedicated to providing top-notch electrical services</br>
+									 that powers your home or business with a team of licensed electricians and a commitment to safety and quality,</br>
+									  you can trust us to get the job done right.</p>
+							   </div>
+							</section>
+
+						<!-- Why Choose Us Section -->
+							<section id="whyus" class="main special">
+								<header class="major">
+									<h2>Why Choose Mentox Electrical Company</h2>
+										<ul>
+											<li>Certified and Experienced Engineers.</li>
+											<li>High-Quality Materials & Equipments.</li>
+											<li>Affordable & Transparent Pricing</li>
+											<li>Sustainable, Eco-Friendly Solutions</li>
+										</ul>
+								</header>
+								<footer class="major">
+									<ul class="actions special">
+										<li><a href="https://wa.me/message/SBJAIE5TBPIOG1" class="button">Get free Quote</a></li>
+									</ul>
+								</footer>
+							</section>
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="CONTACTUS">
+						<section>
+							<h2><strong>MENTOX ELECTRICAL COMPANY</strong></h2>
+							<p>We are committed to delivering safe, reliable, and innovative electrical services that power homes, businesses, and communities. With a focus on quality workmanship and customer satisfaction, we light the way to a brighter, smarter future.</p>
+							<ul class="actions">
+								<li><a href="https://wa.me/message/SBJAIE5TBPIOG1" class="button">Learn More</a></li>
+							</ul>
+						</section>
+						<section>
+							<h2>CONTACT US</h2>
+							<dl class="alt">
+								<dt>Address</dt>
+								<dd>KM9 Ikot Ekpene Road &bull; Umuhia, Abia State &bull; Nigeria</dd>
+								<dt>Phone</dt>
+								<dd>+234 802 821 8335</dd>
+								<dt>Email</dt>
+								<dd><a href="mailto:Mentoxelectrical@gmail.com">Mentoxelectrical@gmail.com</a></dd>
+							</dl>
+							<ul class="icons">
+								<li><a href="https://wa.me/message/SBJAIE5TBPIOG1" class="icon brands fa-whatsapp alt"><span class="label">Whatsapp</span></a></li>
+								<li><a href="https://www.facebook.com/mentoxelectrical" class="icon brands fa-facebook-f alt"><span class="label">Mentoxelectrical</span></a></li>
+								<li><a href="https://www.instagram.com/mentox_tech_man?igsh=MW5uYWMydWNkdGpvOQ==" class="icon brands fa-instagram alt"><span class="label">mentoxelectrical</span></a></li>
+							</ul>
+						</section>
+						<p> class="copyright">&copy; 2025 Mentox Electrical Company Ltd: </p>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
