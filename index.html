@@ -4,7 +4,8 @@
 		<title>Mentoxelectrical</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/main.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesomer/6.4.0/css/all.min.css">
 		<!--CSS written directly inside the HTML-->
 		<style>
 			.hero{
@@ -115,6 +116,47 @@
 					padding: 6px 10px;
 				}
 			}
+			.menu-btn{
+				font-size:24px;
+				cursor:pointer;
+				background:none;
+				border:none;
+				position:relative;
+				z-index:1000; /*keeps it above other elements */
+				color:#1000; /* Change if background is dark */
+			}
+			/*hover effect */
+			.floatingToggle:hover{
+				background:#444;
+			}
+			.floatingToggle i{
+				margin:0;
+			}
+			/* hide menu by default */
+			#menu{
+				display:none;
+				position:fixed;
+				top:60px;
+				right:20px;
+				background:#fff;
+				border:1px solid #960672ff;
+				padding:20px;
+				border-radius:12px;
+				z-index:999;
+			}
+			/* Show when toggled */
+			#menu.active{
+				display:block;
+			}
+			/* Show toggle button and mobile menu only on small screen */
+			@media(max-width:768px){
+				.floatingToggle{
+					display:block; /*show button on mobile */
+				}
+				#nav{
+					display:none; /*hide desktop nav on mobile */
+				}
+			}
 
 		</style>
 	
@@ -133,9 +175,22 @@
 						<!--Logo-->
 						<img src="images/mentoxx.jpg" alt="Mentox Logo">
 						<h1><strong>MENTOX ELECTRICAL COMPANY LTD</strong></h1>
-						<p><em>Powering up the Homes and Businesses with Reliable Electrical Solutions & Clean Solar Energy</em></p>
+						<p><em>Powering up Homes and Businesses with Reliable Electrical Solutions & Clean Solar Energy</em></p>
 						</div>
-						<!-- Nav -->
+						<!--Floating Menu Toggle Button-->
+						<button id="menu-toggle" class="menu-btn">
+						    <i class="fas fa-bars"></i>
+						</button>
+						<!--Mobile Menu Structure-->
+					<nav id="menu">
+						<ul>
+							<li><a href="#HOME">HOME</a></li>
+							<li><a href="#OURSERVICES">OUR SERVICES</a></li>
+							<li><a href="#ABOUTUS">ABOUT US</a></li>
+							<li><a href="#CONTACTUS">CONTACT US</a></li>
+						</ul>
+					</nav>
+						<!-- Main Nav (Desktop)-->
 					<nav id="nav">
 						<ul>
 							<li><a href="#HOME" class="button primary">HOME</a></li>
@@ -159,7 +214,7 @@
 										</header>
 										<p>We bring reliable electrical engineering expertise and sustainable solar energy systems to homes and businesses.</br>
 											Mentox Energy delivers professional electrical engineering and turnkey solar installation for homes and businesses.</br>
-											We design systems that reduce energy:</p>
+											We design systems that reduce:</p>
                                             <ul>
                                                 <li>Energy Cost</li>
                                                 <li>Increase Reliability</li>
@@ -318,6 +373,14 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script>
+				const toggleBtn= document.getElementById("menu-toggle");
+				const menu= document.getElementById("nav");
+
+				toggleBtn.addEventListener("click",() =>{
+					nav.classList.toggle("show");
+				});
+			</script>
 
 	</body>
 </html>
