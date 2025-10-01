@@ -150,7 +150,7 @@
 			}
 			/* Show toggle button and mobile menu only on small screen */
 			@media(max-width:768px){
-				.floatingToggle{
+				.menu-btn{
 					display:block; /*show button on mobile */
 				}
 				#nav{
@@ -375,10 +375,10 @@
 			<script src="assets/js/main.js"></script>
 			<script>
 				const toggleBtn= document.getElementById("menu-toggle");
-				const menu= document.getElementById("nav");
+				const menu= document.getElementById("menu");
 
 				toggleBtn.addEventListener("click",() =>{
-					nav.classList.toggle("show");
+					menu.classList.toggle("active");
 				});
 			</script>
 
